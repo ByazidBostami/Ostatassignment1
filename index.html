@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="side-menu">
+            <div class="heading"><h1>The <br> Company</h1></div>
+            <nav class="menu-item">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#designers">Designers</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content" id="home">
+            <div class="head1">
+                <h1>Interior Design</h1>
+            </div>
+            <div class="showcase" id="showcase">
+                <h3>Showcase</h3>
+                <div class="images">
+                    <img src="images/showcase-01.jpg" alt="loading...">
+                    <img src="images/showcase-02.jpg" alt="loading...">
+                    <img src="images/showcase-03.jpg" alt="loading...">
+                    <img src="images/showcase-04.jpg" alt="loading...">
+                    <img src="images/showcase-05.jpg" alt="loading...">
+                    <img src="images/showcase-06.jpg" alt="loading...">
+                </div>
+            </div>
+            <div class="services" id="services">
+                <h3>Services</h3>
+                <p>We are an interior design service that focuses on what's best for your home and what's best for you!<br><br>
+                    Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                     sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+            </div>
+            <div class="designers" id="designers">
+                <h3>Designers</h3>
+                <p>The best team in the world.<br><br>
+                    We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br><br>
+                    <b>Our designers are thoughtfully chosen:</b><br><br>
+                </p>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img src="images/person-01.jpg" alt="Jane" style="width:100%">
+                        <div class="box">
+                          <h2>Jane Doe <br> <br></h2>
+                          <p class="title">CEO &amp; Founder <br> <br></p>
+                          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <img src="images/person-02.jpg" alt="Mike" style="width:100%">
+                        <div class="box">
+                          <h2>Jane Doe <br> <br></h2>
+                          <p class="title">Designer <br> <br></p>
+                          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <img src="images/person-03.jpg" alt="John" style="width:100%">
+                        <div class="box">
+                          <h2>Mike Ross <br> <br></h2>
+                          <p class="title">Architect <br> <br></p>
+                          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </p>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="package" id="packages">
+                <h3>Package</h3>
+                <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                <br><br><br>
+                </p>
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header">Basic</li>
+                      
+                      <li>Floorplanning</li>
+                      <li>10 hours support</li>
+                      <li>Photography</li>
+                      <li>20% furniture discount</li>
+                      <li>Good deals</li>
+                      <li class="grey">
+                        <button class="button" onclick="updateRooms('basic', -1)">-</button>
+                        $ <span class="price-value">199</span>
+                        <button class="button" onclick="updateRooms('basic', 1)">+</button>
+                      </li>
+                      <li class="grey">
+                        <span class="room-count" id="basic-room-count">1</span> room
+                      </li>
+                      <li class="grey"><button class="button" onclick="signUp('basic')">Sign Up</button></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="columns">
+                    <ul class="price">
+                      <li class="header" style="background-color:#ff5438">Pro</li>
+                      
+                      <li>Floorplanning</li>
+                      <li>50 hours support</li>
+                      <li>Photography</li>
+                      <li>25% furniture discount</li>
+                      <li>Great deals</li>
+                      <li class="grey">
+                        <button class="button" onclick="updateRooms('pro', -1)">-</button>
+                        $ <span class="price-value">249</span>
+                        <button class="button" onclick="updateRooms('pro', 1)">+</button>
+                      </li>
+                      <li class="grey">
+                        <span class="room-count" id="pro-room-count">1</span> room
+                      </li>
+                      <li class="grey"><button class="button" style="background-color: #ff5438; color: white;" onclick="signUp('pro')">Sign Up</button></li>
+                    </ul>
+                  </div>
+
+                  <div id="thank-you-message" style="margin-top: 20px; font-size: 20px; text-align: left; border-bottom: 1px solid #d9d6d6;
+                  padding: 20px;
+                  text-align: center;
+                  background-color: #dddddd;"></div>
+            </div>
+               
+            <div class="contact" id="contact">
+                <h3>Contact</h3>
+                <p>Do you want to style your home? Fill out the form and fill me with the details :) We love meeting new people!</p>
+                <form id="contact-form">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="">
+                
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder="">
+                
+                
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder=""></textarea>
+                
+                    <button type="submit" class="button1" id="button1">Send Message</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
